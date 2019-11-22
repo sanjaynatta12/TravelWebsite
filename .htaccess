@@ -4,6 +4,6 @@ RewriteEngine on
 RewriteRule ^index?$ index.php
 RewriteRule ^index/$ index.php
 
-RewriteRule ^([a-z]+)\/?$ index.php?page=$1 [NC]
+RewriteRule ^([a-z-_0-9]+)\/?$ index.php?page=$1 [NC]
 RewriteRule ^([a-z]+([-a-z][A-Z][0-9]+))\/?$ index.php?page=$1&id=$2 [NC]
 
