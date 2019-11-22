@@ -3,7 +3,6 @@
 if(!isset($_REQUEST['page'])){include("views/home.php");}
 if(isset($_REQUEST['page'])){
 	$page = $_REQUEST['page'];
-	
 	switch ($page){
 		case "index":
 		include("views/home.php");

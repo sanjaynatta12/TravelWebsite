@@ -1,1 +1,4 @@
-this is home
+<?php
+$metaHeader = new metaHeader();
+$metaHeader->getMetaHome();
+?>
