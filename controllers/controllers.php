@@ -18,5 +18,11 @@ class ComplpackageHome extends complpackageHomeModel{
 		   }
 	
 	}
+class aboutUsController{
+	function aboutContent(){
+		   include("views/contents/aboutUsContent.php");
+		   }
+	
+	}
 
 ?>
