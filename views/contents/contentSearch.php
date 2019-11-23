@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 function selectCountry(val) {
 $("#search-boxs").val(val);
-$("#srcRes").hide();
+//$("#srcRes").hide();
 }
 </script>
 <section>
