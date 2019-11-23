@@ -26,5 +26,13 @@ if(isset($_REQUEST['page'])){
 	}
 	
 	}
+class menuSection{
+	public function deskTopMenu(){
+		include("views/contents/desktop_menu.php");
+		}
+	public function mobileMenu(){
+		include("views/contents/mobile_menu.php");
+		}
+	}
 
 ?>

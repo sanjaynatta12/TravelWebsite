@@ -29,13 +29,20 @@ class metaHeader{
 		break;
 	}
 		}
-	
 		$sql = $db->query("SELECT * FROM page_setup WHERE page_id='$page_id'");
 	$rows = $sql->fetchArray(); 
-		
 		include("views/contents/metaContectHome.php");
-	
 		}
+		
+		public function layout(){
+			include("views/contents/layout.php");
+			}
 	}
+	
+	class mainJs{
+	function allJs(){
+		include("views/contents/js.php");
+		}
+}
 
 ?>

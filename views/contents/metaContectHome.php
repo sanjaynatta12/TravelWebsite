@@ -23,4 +23,4 @@
         <meta name="robots" content="index">
         <meta name="language" content="EN">
         <meta name="og:title" content="<?php echo $rows['og_title']; ?>">
-        <meta name="og:url" content="<?php echo $rows['ogurl']; ?>">
+        <meta name="og:url" content="<?php echo $rows['og_url']; ?>">
