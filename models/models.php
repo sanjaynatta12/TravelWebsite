@@ -1,5 +1,4 @@
 <?php
-//include("controllers/controllers.php");
 class metaHeader{
 	public function getMetaHome(){
 		include("database/config.php");
