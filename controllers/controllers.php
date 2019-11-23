@@ -24,5 +24,16 @@ class aboutUsController{
 		   }
 	
 	}
+class hotelContent{
+	function hotelContents(){
+		   include("views/contents/hotelcontent.php");
+		   }
+		   function contentSearchSmall(){ ?>
+                <?php include("views/contents/contentSearchSmall.php"); ?>
+           <?php
+	
+	}
+	
+	}
 
 ?>
