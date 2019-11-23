@@ -5,7 +5,7 @@ class dbs {
 	protected $query;
 	public $query_count = 0;
 	
-	public function __construct($dbhost = 'localhost', $dbuser = 'root', $dbpass = '', $dbname = '', $charset = 'utf8') {
+	public function __construct($dbhost = 'localhost', $dbuser = 'root', $dbpass = '', $dbname = 'maketrav', $charset = 'utf8') {
 		$this->connection = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 		if ($this->connection->connect_error) {
 			die('Failed to connect to MySQL - ' . $this->connection->connect_error);

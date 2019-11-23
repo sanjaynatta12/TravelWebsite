@@ -2,6 +2,9 @@
 $metaHeader = new metaHeader();
 $menuSection = new menuSection();
 $mainSearchController = new mainSearchController();
+$controllers = new controllers();
+$packageHome = new packageHome();
+$ComplpackageHome = new ComplpackageHome();
 $mainJs = new mainJs();
 ?>
 <!doctype html>
@@ -18,6 +21,11 @@ $metaHeader->layout();
    $menuSection->mobileMenu();
    $menuSection->deskTopMenu(); 
    $mainSearchController->mainSearch();
+   $controllers->topHetelsHome();
+   $packageHome->topPackageHome();
+   $ComplpackageHome->completedPackages();
+   mobileAd();
+   footer();
    ?>
    
    <?php
