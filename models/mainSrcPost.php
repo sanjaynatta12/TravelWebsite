@@ -132,6 +132,28 @@ class mainSrcPost{
 				  <?php }
 			   }
 		   }
+		   
+		   function similarHotels(){
+			   $db = new dbs();
+				$chkhotel8 = $db->query("SELECT * FROM hotel_details LIMIT 8");
+				$rowHotel8s =$chkhotel8->fetchAll();
+				foreach($rowHotel8s as $rowHotel8){
+					$rooms = $rowHotel8['rooms'];
+					$rt = $rowHotel8['rates'];
+					$rates = number_format($rt,1);
+		
+					 ?>
+								<!--LISTINGS-->
+								<li>
+									<a href="#">
+										<div class="hot-page2-hom-pre-1 hot-page2-alp-cl-1-1"> <img src="assets/images/hotels/1.jpg" alt=""> </div>
+										<div class="hot-page2-hom-pre-2 hot-page2-alp-cl-1-2">
+											<h5><?php echo $rowHotel8['hotel_name']; ?></h5> <span><?php echo $rowHotel8['address']; ?>, <?php echo $rowHotel8['city']; ?></span> </div>
+										<div class="hot-page2-hom-pre-3 hot-page2-alp-cl-1-3"> <span><?php echo $rates; ?></span> </div>
+									</a>
+								</li>
+								<?php }  ?>
+			  <?php }
 	}
 
 ?>
