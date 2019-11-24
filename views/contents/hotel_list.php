@@ -4,17 +4,17 @@
 							<div class="row">
                             
                             <?php
-				$chkhotel = $db->query ("SELECT * FROM hotel_details")->fetchAll();
-				
+				$chkhotel = $db->query("SELECT * FROM hotel_details")->fetchAll();
+				foreach($chkhotel as $rowHotel){
 					$rooms = $rowHotel['rooms'];
 					if($rooms=="0"){
 						$rm = "Room Not Abailable";
 						}else{
 							$rm = "Available Rooms: $rooms";
 							}
-		$test = mysqli_query($db,"SELECT MIN(price) as prc FROM rooms WHERE hotel_id='".$rowHotel['hotel_id']."'");
+		$test = $db->query("SELECT MIN(price) as prc FROM rooms WHERE hotel_id='".$rowHotel['hotel_id']."'")->fetchArray();
 		
-			$testR = mysqli_fetch_array($test);
+			$testR = $test;
 			$prices = $testR['prc'];
 			if($prices==""){
 				$price = $rowHotel['price'];
@@ -28,7 +28,7 @@
 									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
 										<a href="javascript:void(0);">
 											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="images/hotels/<?php echo $rowHotel['main_img']; ?>" alt="" style="width:225px; height:190px"> </div>
+											<div class="hot-page2-hli-1"> <img src="assets/images/hotels/<?php echo $rowHotel['main_img']; ?>" alt="" style="width:225px; height:190px"> </div>
 											<div class="hom-hot-av-tic hom-hot-av-tic-list"> <?php echo $rm; ?> </div>
 										</a>
 									</div>
