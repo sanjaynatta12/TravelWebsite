@@ -31,9 +31,12 @@ class hotelContent{
 		   function contentSearchSmall(){ ?>
                 <?php include("views/contents/contentSearchSmall.php"); ?>
            <?php
+	}
+	}
+class contactUsController{
+	function contactContent(){
+		   include("views/contents/contactContent.php");
+		   }
 	
 	}
-	
-	}
-
 ?>

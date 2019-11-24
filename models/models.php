@@ -12,8 +12,9 @@ class metaHeader{
 		case "index":
 		$page_id = "home";
 		break;
-		case "about-us":
-		$page_id = "about-us";
+		case "$page":
+		$page_id = "$page";
+		/*
 		break;
 		case "hotels":
 		$page_id = "hotels";
@@ -27,6 +28,7 @@ class metaHeader{
 		case "packages":
 		$page_id = "packages";
 		break;
+		*/
 	}
 		}
 		$sql = $db->query("SELECT * FROM page_setup WHERE page_id='$page_id'");

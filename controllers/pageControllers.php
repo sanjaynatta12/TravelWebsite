@@ -7,9 +7,11 @@ if(isset($_REQUEST['page'])){
 		case "index":
 		include("views/home.php");
 		break;
-		case "about-us":
-		include("views/about-us.php");
+		case "$page":
+		@include("views/$page.php");
 		break;
+		
+		/*
 		case "hotels":
 		include("views/hotels.php");
 		break;
@@ -22,6 +24,11 @@ if(isset($_REQUEST['page'])){
 		case "packages":
 		include("views/packages.php");
 		break;
+		case "contact-us":
+		include("views/packages.php");
+		break;
+		
+		*/
 		
 	}
 	
