@@ -22,7 +22,8 @@
                             <h2>The <span>Travel</span></h2>
                             <p>We Provide Outsourced Software Development Services To Over 50 Clients From 21 Countries.</p>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 new-con new-con1"> <img src="img/contact/1.png" alt="">
+                        <div class="col-md-3 col-sm-6 col-xs-12 new-con new-con1"> 
+				<img src="img/contact/1.png" alt="contact">
                             <h4>Address</h4>
                             <p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.
                                 <br>Landmark : Next To Airport</p>
