@@ -42,7 +42,7 @@ $("#search-boxs").val(val);
                 <h4 class="modal-title">Search By Hotel or City</h4>
             </div>
             <div class="modal-body">
-                        <form   action="hotelSearch" method="get" class="example">
+                        <form   action="hotelSearch" method="post" class="example">
                         <div align="center">
                         <div class="btnDiv">
                         <input type="text" style="width:100%" class="searchInput" id="search-boxs" placeholder="Search.." autocomplete="off" name="search">

@@ -39,4 +39,9 @@ class contactUsController{
 		   }
 	
 	}
+class mainSearchPostController extends mainSrcPost{
+	  function mainSearchHotelList(){
+		  include("views/contents/srchResultContent.php");
+		  }
+	}
 ?>

@@ -42,7 +42,7 @@ $("#search-boxs").val(val);
                     <div class="tourz-search-1">
                         <h2>Plan Your Travel Now!</h2>
                         <p>Experience the various exciting tour and travel packages and Make hotel reservations, find vacation packages, search cheap hotels and events</p>
-                        <form   action="hotelSearch" method="get" class="example">
+                        <form   action="hotelSearch" method="post" class="example">
                         <div align="center">
                         <div class="btnDiv">
                         <input type="text" style="width:100%" class="searchInput" id="search-boxs" placeholder="Search.." autocomplete="off" name="search">
