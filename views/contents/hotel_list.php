@@ -4,8 +4,8 @@
 							<div class="row">
                             
                             <?php
-				$chkhotel = mysqli_query($db,"SELECT * FROM hotel_details");
-				while($rowHotel = mysqli_fetch_array($chkhotel)){
+				$chkhotel = $db->query ("SELECT * FROM hotel_details")->fetchAll();
+				
 					$rooms = $rowHotel['rooms'];
 					if($rooms=="0"){
 						$rm = "Room Not Abailable";
