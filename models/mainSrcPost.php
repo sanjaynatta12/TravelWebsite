@@ -108,7 +108,7 @@ class mainSrcPost{
                              <del> <?php echo $fakeprice; ?></del>
                                              <span class="hot-list-p3-2 ">&#8377; <?php echo $price; ?></span>
                                              <span class="hot-list-p3-4">
-                                             <form action="hotel-details" method="post">
+                                             <form action="hotel-details" method="get">
                                    
                                    
                                    <input type="hidden" name="id" value="<?php echo $rowHotel['hotel_id']; ?>" />

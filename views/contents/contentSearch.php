@@ -28,6 +28,16 @@ $(document).ready(function(){
 	$("#RAC").click(function() {
        $("#rbox").css("display","block"); 
     });
+	
+	$(".top15").click(function() {
+		var searchs = $(".srcDtls").val()
+       var start = $(".t-input-check-in").val()
+	   var end = $(".t-input-check-in").val()
+	   var rooms = $(".srcDtls").val()
+	   var adlts = $(".srcDtls").val()
+	   var child = $(".srcDtls").val()
+		location.href="hotelSearchNew/"+searchs+"/"+start+"/"+end+"/"+rooms+"/"+adlts+"/"+child;
+    });
 });
 
 function selectCountry(val) {
@@ -42,10 +52,10 @@ $("#search-boxs").val(val);
                     <div class="tourz-search-1">
                         <h2>Plan Your Travel Now!</h2>
                         <p>Experience the various exciting tour and travel packages and Make hotel reservations, find vacation packages, search cheap hotels and events</p>
-                        <form   action="hotelSearch" method="post" class="example">
+                        <!---form   action="hotelSearch" method="post" class="example"--->
                         <div align="center">
                         <div class="btnDiv">
-                        <input type="text" style="width:100%" class="searchInput" id="search-boxs" placeholder="Search.." autocomplete="off" name="search">
+                        <input type="text" style="width:100%" class="searchInput srcDtls" id="search-boxs" placeholder="Search.." autocomplete="off" name="search">
                         <div  id="srcRes"></div>
                         </div>
                         <div class="dateInfo">
@@ -85,7 +95,7 @@ $("#search-boxs").val(val);
   <input type="submit" class="btn btn-primary top15" value="Search"></div>
   </div>
   <div id="suggesstion-box"></div>
-                        </form>
+                        <!---/form--->
                         <div class="tourz-hom-ser">
                             <ul>
                              <li>

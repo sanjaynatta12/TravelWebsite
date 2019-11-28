@@ -3,10 +3,11 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^index?$ index.php
-RewriteRule ^index/$ index.php
 
-RewriteRule ^([a-z-_0-9]+)\/?$ index.php?page=$1 [NC]
-RewriteRule ^/?([a-zA-Z-_0-9]+)/([a-zA-Z_0-9]+)$ index.php?page=$1&id=$2 [L]
+
+#RewriteRule ^([a-z-_0-9]+)\/?$ index.php?page=$1 [NC]
+#RewriteRule ^(.*)$ index.php?page=$1&getquery=$2 [QSA,L]
+#RewriteRule ^(.*)$ hotelSearchNew.php?getquery=$1 [QSA,L]
 
 
 
